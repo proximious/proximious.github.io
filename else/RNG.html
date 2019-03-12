@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>A generator</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<style>
+	body {
+		background-color: #051829;
+	}
+	#chosenName {
+		text-align: center;
+		font-size: 5em;
+		font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+		color: whitesmoke;
+	}
+	#RNGButton {
+		font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  	border: none;
+  	color: black;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	}
+</style>
+</head>
+
+<body>
+<center>
+<br><br>
+<button id="RNGButton">
+  Pick Winner
+</button>
+</center>
+<br><br><br><br><br><br><br>
+<div id="chosenName"></div>
+
+<script>
+/*to add more "person" simply copy/paste
+person: "x"
+},{
+before the closing tag on lin 79
+*/
+$("#RNGButton").click(function() {
+  var unfortunateSouls = [{
+  person: "1"
+  },{
+  person: "2"
+  },{
+  person: "3"
+  },{
+  person: "4"
+  },{
+	person: "5"
+  },{
+	person: "6"
+  },{
+	person: "7"
+  },{
+	person: "8"
+  },{
+	person: "9"
+  },{
+	person: "10"
+  },{
+	person: "11"
+  },{
+	person: "12"
+  },{
+	person: "13"
+  },{
+	person: "14"
+  },{
+	person: "15"
+  }];
+
+  var winner = Math.floor(Math.random() * unfortunateSouls.length)
+  $('div').html(unfortunateSouls[winner].person);
+});
+
+</script>
+</body>
+</html>

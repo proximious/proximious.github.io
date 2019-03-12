@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <!-- fullpage library-->
+  <link rel="stylesheet" type="text/css" href="fullpage/fullpage.css">
+  <!-- headline library -->
+  <link rel="stylesheet" type="text/css" href="headline/reset.css">
+  <link rel="stylesheet" type="text/css" href="headline/style.css">
+  <title>Mental Health</title>
+</head>
+<body>
+  <!--
+  First section consists of the front page
+  Second section consists of an introduction to the topic
+  Third section consists of the problem and stats
+  Fourth section consists of possible solutions
+  Fifth section consists of organizations as well as their websites
+  Sixth section consists of other content
+  -->
+<div id="fullpage">
+
+  <div class="section" id="firstPage">
+    <h1 class="cd-headline letters type">
+    		<span class="firstPageFirstWord">Mental</span> <br>
+    		<span class="cd-words-wrapper waiting">
+    			<b class="is-visible firstPageHeader">Health</b>
+    			<b class="firstPageHeader">Awareness</b>
+          <b class="firstPageHeader"><span class="mainText">Sickness</span></b>
+          <b class="firstPageHeader"><span class="mainText">Disorder</span></b>
+    		</span>
+    </h1>
+  </div>
+
+  <div class="section">
+
+    <div class="wrapper">
+      <div class="flex-slider"><a class="panel slide-1" href="#0">
+          <div class="slide-content">
+            <h3 class="slide-header">fourth slide</h3>
+            <div class="slide-body">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div></a><a class="panel slide-2" href="#0">
+          <div class="slide-content">
+            <h3 class="slide-header">third slide</h3>
+            <div class="slide-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente odit minus praesentium facere perspiciatis.</p>
+            </div>
+          </div></a><a class="panel slide-3" href="#0">
+          <div class="slide-content">
+            <h3 class="slide-header">second slide</h3>
+            <div class="slide-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div></a><a class="panel slide-4" href="#0">
+          <div class="slide-content">
+            <h3 class="slide-header">first slide</h3>
+            <div class="slide-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div></a></div>
+    </div>
+
+    </div>
+
+  </div> <!--fullapage closing div-->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="headline/modernizr.js"></script>
+<script type="text/javascript" src="headline/main.js"></script>
+<script src="script.js"></script>
+<script src="fullpage/fullpage.js"></script>
+  <script>
+      new fullpage('#fullpage', {
+      //options here
+      autoScrolling: true,
+      scrollHorizontally: true
+    });
+    //methods
+    fullpage_api.setAllowScrolling(true);
+  </script>
+</html>

@@ -1,0 +1,65 @@
+body {
+ background-color: #051829;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: top;
+}
+
+.mainText {
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+.header {
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 25px;
+  text-align: center;
+}
+
+#name {
+  position: fixed;
+  width:100%;
+  padding: 0px;
+  color: whitesmoke;
+  background-color: #000000;
+  margin: 0px;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#dateNumber {
+  position: fixed;
+  width:100%;
+  padding: 0px;
+  color: whitesmoke;
+  margin-top: 5.5%;
+  top: 0;
+  left: 0;
+}
+
+#container{
+  margin-top: 0%;
+}
+
+.firstPageText{
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: whitesmoke;
+  font-size: 10em;
+}
+
+.title{
+  top: 0;
+  position: relative;
+  font-size:5em;
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+}
+
+.section{
+  
+}
