@@ -63,6 +63,7 @@
 #firstPage{
   background-image: url(background.jpg);
   overflow: hidden;
+  background-size: cover;
 }
 
 /*-------------css for the slider on second page--------------------*/
