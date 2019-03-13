@@ -1,11 +1,11 @@
 jQuery(document).ready(function($){
 	//set animation timing
-	var animationDelay = 2000,//how long the word stays on the screen before being changed
+	var animationDelay = 1500,//how long the word stays on the screen before being changed
 		//loading bar effect
 		barAnimationDelay = 300,//changes how fast the cursor blinks
 		barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
 		//letters effect
-		lettersDelay = 65,//time in between the letters being typed
+		lettersDelay = 50,//time in between the letters being typed
 		//type effect
 		typeLettersDelay = 250,
 		selectionDuration = 200, //changes how long the text is highlighted before being changed

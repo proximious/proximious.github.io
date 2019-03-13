@@ -5,19 +5,15 @@
 }
 
 .firstPageHeader{
-  font-family: 'Roboto Mono', monospace;4
+  font-family: 'Roboto Mono', monospace;
   color: whitesmoke;
   font-size: 3em;
   position: absolute;
-  left: 50px;
+  top: 300px;
 }
 
-.firstPageFirstWord{
-  font-family: 'Roboto Mono', monospace;4
-  color: whitesmoke;
-  font-size: 3em;
-  position: absolute;
-  left: 20px;
+.cd-headline{
+    padding-left: 100px;
 }
 
 .header {
