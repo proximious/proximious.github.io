@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="dargon.jpg">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <!-- fullpage library-->
   <link rel="stylesheet" type="text/css" href="fullpage/fullpage.css">
@@ -47,14 +48,19 @@
       <div class="flex-slider">
           <a class="panel slide-3" href="#0">
           <div class="slide-content">
-            <h3 class="slide-header">What is unity?</h3>
+            <h3 class="slide-header">Why is it important?  </h3><!-- on the right-->
             <div class="slide-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor vero veritatis nemo, esse dolorum. Nesciunt ex deleniti voluptate magni, assumenda, nulla vero dignissimos dolore ab excepturi necessitatibus quibusdam dolorem!</p>
+              <p class="mainText">
+                Unity has nothing but benefits. It has proven its worth to many people.
+                When alone, it is more likely for life to beat you down and whatnot; this
+                is when we recognize the potential of unity. It helps us create a family
+                of people to look up to and assist in any way possible.
+              </p>
             </div>
           </div></a>
-          <a class="panel slide-4" href="#0">
+          <a class="panel slide-4" href="#0"><!--on the left-->
           <div class="slide-content">
-            <h3 class="slide-header">Why is it important?</h3>
+            <h3 class="slide-header">What is unity?</h3>
             <div class="slide-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor vero veritatis nemo, esse dolorum. Nesciunt ex deleniti voluptate magni, assumenda, nulla vero dignissimos dolore ab excepturi necessitatibus quibusdam dolorem!</p>
             </div>
@@ -64,7 +70,18 @@
     </div>
 
     <div class="section">
-      <h1 class="header">Tis mucho fuego</h1>
+      <center>
+      <div class="siema">
+        <img src="dargon.jpg" alt="fuego" class="example">
+        <img src="dargon.jpg" alt="fuego" class="example">
+        <img src="dargon.jpg" alt="fuego" class="example">
+        <img src="dargon.jpg" alt="fuego" class="example">
+        <img src="dargon.jpg" alt="fuego" class="example">
+        <img src="dargon.jpg" alt="fuego" class="example">
+      </div>
+      <button class="prev"><</button>
+      <button class="next">></button>
+      </center>
     </div>
 
   </div> <!--fullapage closing div-->
@@ -85,9 +102,22 @@
     fullpage_api.setAllowScrolling(true);
   </script>
 <script type="text/javascript" src="wanker/jquery.wanker.js"></script>
-<script>
-    $(function() {
-      $('[data-wanker]').wanker();
-    });
-</script>
+  <script>
+      $(function() {
+        $('[data-wanker]').wanker();
+      });
+  </script>
+<script src="siema/dist/siema.min.js"></script>
+  <script>
+  const mySiema = new Siema({
+    easing: "ease-out",
+    perPage: 1,
+    draggable: true,
+    loop: true,
+    duration: 300,
+  });
+document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+document.querySelector('.next').addEventListener('click', () => mySiema.next());
+
+  </script>
 </html>

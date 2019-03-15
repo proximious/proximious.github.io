@@ -1,22 +1,8 @@
+/*------------main css for every project---*/
 .mainText {
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
   color: whitesmoke;
   font-size: 1em;
-}
-
-.firstPageHeader{
-  font-family: 'Roboto Mono', monospace;
-  color: whitesmoke;
-  font-size: 3em;
-  position: absolute;
-  top: 300px;
-  background-color: rgba(0, 0, 0, 0.5);
-  line-height: 1.7;
-}
-
-.cd-headline{
-    padding-left: 100px;
-    padding-top: 350px;
 }
 
 .header {
@@ -62,7 +48,7 @@
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
 }
 
-/*---------------------------------------------------*/
+/*-----------------custom css--------------------*/
 #firstPage{
   background-image: url(frontPageBackground.jpg);
   overflow: hidden;
@@ -70,6 +56,44 @@
   background-position: center bottom;
 }
 
+.example{
+  width:50%;
+}
+
+.firstPageHeader{
+  font-family: 'Roboto Mono', monospace;
+  color: whitesmoke;
+  font-size: 3em;
+  position: absolute;
+  top: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 1.7;
+}
+
+.cd-headline{
+    padding-left: 100px;
+    padding-top: 350px;
+}
+
+.prev{
+  margin-right: 500px;
+  font-size: 5em;
+  border-radius: 50%;
+}
+
+.next{
+  margin-left: 500px;
+  font-size: 5em;
+  border-radius: 50%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 /*-------------css for the slider on second page--------------------*/
 
 .flex-slider {
@@ -178,7 +202,7 @@
     flex-direction: column;
   }
 }
-/*---------------------------------------------------*/
+/*-------wanker js library initialization----------------------*/
 .wanker {
   text-align: center;
   background: #000000;
