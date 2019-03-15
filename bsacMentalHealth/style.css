@@ -175,3 +175,17 @@
   }
 }
 /*---------------------------------------------------*/
+.wanker {
+  text-align: center;
+  background: #000000;
+  color: whitesmoke;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2014;
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  font-size: 3em;
+}

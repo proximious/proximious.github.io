@@ -22,6 +22,14 @@
   Fifth section consists of organizations as well as their websites
   Sixth section consists of other content
   -->
+
+  <div class="wanker" data-wanker>
+    <div class="wanker-content"><br><br><br><br><br><br>
+      <h1>The web was meant to be read, not squished.</h1>
+      <p>Prevent excessive browser resizing and get people back to reading.</p>
+    </div>
+  </div>
+
 <div id="fullpage">
 
   <div class="section" id="firstPage">
@@ -84,4 +92,10 @@
     //methods
     fullpage_api.setAllowScrolling(true);
   </script>
+<script type="text/javascript" src="wanker/jquery.wanker.js"></script>
+<script>
+    $(function() {
+      $('[data-wanker]').wanker();
+    });
+</script>
 </html>
