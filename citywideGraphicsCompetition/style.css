@@ -2,7 +2,8 @@
 .mainText {
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
   color: whitesmoke;
-  font-size: 1em;
+  font-size: 1.3em;
+  line-height: 1.8;
 }
 
 .header {
@@ -75,25 +76,6 @@
     padding-top: 350px;
 }
 
-.prev{
-  margin-right: 500px;
-  font-size: 5em;
-  border-radius: 50%;
-}
-
-.next{
-  margin-left: 500px;
-  font-size: 5em;
-  border-radius: 50%;
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 /*-------------css for the slider on second page--------------------*/
 
 .flex-slider {
@@ -174,7 +156,7 @@
   }
 }
 .flex-slider .panel:active > .slide-content > .slide-body, .flex-slider .panel:focus > .slide-content > .slide-body, .flex-slider .panel:active > .slide-content > .slide-body {
-  width: 75%;
+  width: 60%;
 }
 @media (max-width: 40em) {
   .flex-slider .panel:hover > .slide-content > .slide-body, .flex-slider .panel:focus > .slide-content > .slide-body, .flex-slider .panel:active > .slide-content > .slide-body {
