@@ -10,6 +10,8 @@
   font-size: 3em;
   position: absolute;
   top: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 1.7;
 }
 
 .cd-headline{
@@ -62,9 +64,10 @@
 
 /*---------------------------------------------------*/
 #firstPage{
-  background-image: url(background.jpg);
+  background-image: url(frontPageBackground.jpg);
   overflow: hidden;
   background-size: cover;
+  background-position: center bottom;
 }
 
 /*-------------css for the slider on second page--------------------*/
