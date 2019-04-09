@@ -1,7 +1,15 @@
 .mainText {
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
   color: whitesmoke;
-  font-size: 1em;
+  font-size: 1.5em;
+  line-height: 2.0;
+}
+
+.li {
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: whitesmoke;
+  font-size: 1.3em;
+  line-height: 2.0;
 }
 
 .firstPageHeader{
