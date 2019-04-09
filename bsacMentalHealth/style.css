@@ -8,8 +8,15 @@
 .li {
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
   color: whitesmoke;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 2.0;
+}
+
+.li2 {
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: whitesmoke;
+  font-size: 1.2em;
+  line-height: 2.5;
 }
 
 .firstPageHeader{
@@ -67,13 +74,23 @@
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
 }
 
+a {
+  text-decoration: none;
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: whitesmoke;
+}
+
+.content{
+  font-size: 2.3em;
+  line-height: 1.8;
+}
+
 /*---------------------------------------------------*/
 #firstPage{
   background-image: url(background.jpg);
   overflow: hidden;
   background-size: cover;
 }
-
 /*-------------css for the slider on second page--------------------*/
 
 .flex-slider {
@@ -196,4 +213,34 @@
   z-index: 2014;
   font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
   font-size: 3em;
+}
+
+/*---------------------------------------------------*/
+.cont {
+ display: flex;
+ position        : relative;
+ top             : 30px;
+ width           : 100%;
+ height          : 70vh;
+ justify-content : center;
+}
+
+.cont-cards {
+ width           : 90%;
+ justify-content : space-between;
+ align-content: center;
+}
+
+.cards {
+ display   : inline-block;
+ position  : relative;
+ top       : 100px;
+ width     : 35%;
+ height    : 45vh;
+ box-shadow: 4px 5px 5px rgba(0,0,0,0.5);
+ padding: 10px 16px;
+}
+
+.cards:nth-child(1) {
+ background-color : #26355E;
 }
