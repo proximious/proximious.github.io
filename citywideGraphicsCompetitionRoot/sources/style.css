@@ -1,0 +1,109 @@
+body{
+  background-color: white;
+}
+
+#navBar{
+  display: flex;
+  top: 7;
+}
+
+#navTitle{
+  padding-left: 50px;
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 3em;
+}
+
+ul{
+  position: absolute;
+  right:0;
+  z-index: 2;
+  padding-right: 50px;
+}
+
+li{
+  list-style-type: none;
+  float: left;
+  padding: 17px 15px;
+  padding-top: 5.5vh;
+}
+
+.navigationChoices{
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  text-decoration: none;
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 1.4em;
+  z-index: 1;
+}
+
+#footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e4e4e4;
+  color: black;
+}
+
+#footerContent{
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  text-align: right;
+  float: right;
+  padding: 5px;
+}
+
+#logo{
+  width: 80px;
+  float: left;
+  padding: 5px;
+}
+
+section{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 570px;
+  width: 600px;
+  background-color: black;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  display: flex;
+}
+
+.leftBox{
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  line-height: 1.8;
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 1.3em;
+  padding: 1% 0% 1% 2%;
+}
+
+.sectionTitle{
+  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 3em;
+  padding: 0% 0% 0% 2%;
+}
+
+.sectionText{
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 1.2em;
+  line-height: 2.0;
+  padding: 0% 0% 2% 3%;
+}
+
+span{
+  color: white;
+}
