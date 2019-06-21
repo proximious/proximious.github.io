@@ -4,33 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <link rel="icon" href="assets/logo.png">
   <link rel="stylesheet" href="style.css">
-  <!--Libraries: css section-->
-  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="assets/fullpage.css">
+  <link rel="stylesheet" href="assets/animsition.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+  <title>Final Portfolio: Alex Iacob</title>
 </head>
-<!--The first section should consist of an introduction to myself, likely a logo and suble background-->
-<!--the second section should consist of -->
-<div id="fullpage">
-  <div class="section" id="firstSection">some hot content here</div>
-  <div class="section" id="secondSection">some good shit</div>
-  <div class="section" id="thirdSection">this page finna be fire</div>
-  <div class="section" id="fourthSection">this is a test</div>
+<body>
+<div id="particles-js" class="background"></div>
 
+<div class="animsition">
+
+<div id="fullpage">
+
+  <div class="section">
+  <center>
+    <h3 id="firstPageName">Alexandru Iacob</h3>
+    <img src="assets/logo.png" width="500px" alt=""><br><br><br><br>
+    <div class="arrow arrowDown"></div>
+  </center>
+  </div>
+
+
+  <div class="section">
+    <div class="arrow arrowUp"></div>
+
+    <section>
+      <div class="leftBox">
+        <h1 class="sectionTitleL">About Me</h1>
+        <p class="sectionTextL">
+          I am currently a Senior at Information Technology High School
+          enrolled in the CTE Web Design Academy. I will be attending
+          Rochester Institute of Technology during September 2019 as a
+          freshman and will be majoring in Computer Science. I will first
+          get my Bachelor's degree then possibly my Master's degree. <br><br>
+          During my years at High School I have strived to find my passions
+          in the technology field. During my free time, I like to hone in on
+          my various skills to continue to develop them.
+        </p>
+      </div>
+      <div class="rightBox">
+        <h1 class="sectionTitleR">Lorem</h1>
+        <img src="assets/me.jpg" id="me" width="400px" alt="">
+      </div>
+    </section>
+    <div class="arrow arrowDown"></div>
+  </div>
+
+
+  <div class="section">
+  <div class="arrow arrowUp"></div>
+  <section>
+    <div class="leftBox2">
+      <h1 class="sectionTitleL">My Skills and Past Work</h1>
+      <p class="sectionTextL">
+        Throughout my 3 years at Web Design, I have learned many things that I will use in <br>
+        the future. Some of which include learning a majority of the Adobe Suite and many <br>
+        soft skills. The skills can be boiled down to visual design, HTML, CSS, JS, and JQ.<br><br>
+        Below are all of the Labs and Projects during the last 3 years.
+
+        <div class="wrap">
+          <a href="workDisplayLabs.html" class="button">Labs</a>
+          <a href="workDisplayProjects.html" class="button">Projects</a>
+          <a href="http://firstfloorkids-alex.blogspot.com/" class="button" target="_blank">Blogspot</a>
+        </div>
+      </p>
+    </div>
+  </section>
+  <div class="arrow arrowDown"></div>
+  </div>
+
+
+
+
+  <div class="section">
+  <div class="arrow arrowUp"></div>
+  <section>
+    <div class="leftBox2">
+      <h1 class="sectionTitleL">Contact Me</h1>
+      <p class="sectionTextL">
+        I am likely to respond under any of the following:  <br><br>
+        Phone: 347-822-7221 <br>
+        Email: alexiacob28@gmail.com
+
+        <div class="wrap">
+          <a href="https://www.instagram.com/proximious_/" class="button" target="_blank">Instagram</a>
+          <a href="https://proximious.github.io/" class="button" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/alexiacob28/" class="button" target="_blank">LinkedIn</a>
+          <a href="assets/resumeAlexIacob.pdf" class="button" target="_blank">Resume</a>
+        </div>
+      </p>
+    </div>
+  </section>
+
+
+  </div>
 </div>
 
-<body>
-<h1>tis but a test</h1>
+</div>
 </body>
-  <!--Libraries: js section-->
-  <script src="js/fullpage.js" charset="utf-8"></script>
-  <script>
-      new fullpage('#fullpage', {
-    	//options here
-    	autoScrolling:true,
-    	scrollHorizontally: true
-    });
-
-    //methods
-    fullpage_api.setAllowScrolling(true);</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="assets/fullpage.js"></script>
+<script src="assets/animsition.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+<script>
+$(".arrowDown").click(function () {
+    fullpage_api.moveSectionDown();
+  });
+$(".arrowUp").click(function () {
+    fullpage_api.moveSectionUp();
+  });
+</script>
 </html>

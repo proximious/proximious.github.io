@@ -1,65 +1,158 @@
-body {
- background-color: #051829;
- background-repeat: no-repeat;
- background-size: cover;
- background-position: top;
+html{
+  margin: 0;
 }
 
-.mainText {
-  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
-  color: whitesmoke;
-  font-size: 1em;
-}
-
-.header {
-  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
-  color: whitesmoke;
-  font-size: 1.5em;
-  font-weight: 100;
-  margin: 25px;
-  text-align: center;
-}
-
-#name {
-  position: fixed;
-  width:100%;
-  padding: 0px;
-  color: whitesmoke;
-  background-color: #000000;
-  margin: 0px;
-  opacity: 0.85;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-#dateNumber {
-  position: fixed;
-  width:100%;
-  padding: 0px;
-  color: whitesmoke;
-  margin-top: 5.5%;
-  top: 0;
-  left: 0;
-}
-
-#container{
-  margin-top: 0%;
-}
-
-.firstPageText{
-  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
-  color: whitesmoke;
-  font-size: 10em;
-}
-
-.title{
-  top: 0;
-  position: relative;
-  font-size:5em;
-  font-family: Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+body{
+  background-color: black;
 }
 
 .section{
-  
+  color: white;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+#firstPageName{
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial,"sans-serif";
+  font-size: 7em;
+  text-shadow: 3px 6px 0px blue;
+}
+
+.arrow, .arrow:before {
+	position: absolute;
+	left: 50%;
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	margin: -20px 0 0 -20px;
+	-webkit-transform: rotate(45deg);
+	border-left: none;
+	border-top: none;
+	position: absolute;
+	cursor: pointer;
+	bottom: 5vh;
+}
+
+.arrowDown {
+	border-right: 2px #fff solid;
+	border-bottom: 2px #fff solid;
+}
+
+.arrowUp {
+	z-index: 5;
+	position: absolute;
+	border-right: 2px #fff solid;
+	border-bottom: 2px #fff solid;
+	-webkit-transform: rotate(225deg);
+	top: 5vh;
+}
+
+#me{
+  margin-right: 0px;
+}
+
+section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 650px;
+  width: 1200px;
+  background-color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  display: flex;
+}
+
+.leftBox{
+  width: 60%;
+  height: 100%;
+  background: white;
+  box-sizing: border-box;
+}
+
+.rightBox{
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.sectionTitleL{
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 3em;
+  padding: 1% 0% 1% 2%;
+  text-shadow: 1px 2px 0px blue;
+}
+
+.sectionTextL{
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: black;
+  font-size: 1.3em;
+  line-height: 2.0;
+  padding: 0% 0% 5% 3%;
+}
+
+.sectionTitleR{
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: white;
+  font-size: 3em;
+  padding: 1% 0% 1% 2%;
+}
+
+.sectionTextR{
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial," sans-serif";
+  color: white;
+  font-size: 1.2em;
+  line-height: 2.0;
+  padding: 10% 0% 5% 3%;
+}
+
+.leftBox2{
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-sizing: border-box;
+}
+
+.wrap {
+	top: 75%;
+	left: 20%;
+	text-align: center;
+  display: flex;
+}
+
+a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	margin: 30px auto;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+
+a.button {
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial,"sans-serif";
+  font-size: 2em;
+	color: rgba(0, 0, 0, 0.6);
+	box-shadow: rgba(0, 0, 0, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+  font-family: 'Orbitron', Futura, Abel, Gotham, Helvetica, Arial,"sans-serif";
+  font-size: 2em;
+	color: rgba(0, 0, 255, 0.85);
+	box-shadow: rgba(0, 0, 0, 1) 0 80px 0px 2px inset;
 }
