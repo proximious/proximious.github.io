@@ -34,6 +34,10 @@ function onScroll() {
   sections.forEach((section, i) => {
     if (section.getBoundingClientRect().top <= 120) current = i;
   });
+  // The last section can be too short to reach the menu, so pick it at the page bottom
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+    current = sections.length - 1;
+  }
   navLinks.forEach((link, i) => link.classList.toggle('active', i === current));
 }
 
