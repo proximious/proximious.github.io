@@ -21,3 +21,21 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+const toTop = document.querySelector('.to-top');
+const navLinks = [...document.querySelectorAll('.site-nav a')];
+const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href')));
+
+function onScroll() {
+  toTop.classList.toggle('shown', window.scrollY > 600);
+
+  // Highlight the last section whose top has passed the menu
+  let current = -1;
+  sections.forEach((section, i) => {
+    if (section.getBoundingClientRect().top <= 120) current = i;
+  });
+  navLinks.forEach((link, i) => link.classList.toggle('active', i === current));
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
