@@ -1,0 +1,363 @@
+:root {
+  --bg: #000000;
+  --text: #f8f8f8;
+  --muted: #9e9e9e;
+  --border: #383838;
+  --card: #101010;
+  --accent: #d64651;
+  --accent-strong: #7f1f29;
+  --glow: rgba(255, 255, 255, 0.13);
+}
+
+:root[data-theme="light"] {
+  --bg: #fbfbfb;
+  --text: #171717;
+  --muted: #666666;
+  --border: #dcdcdc;
+  --card: #ffffff;
+  --accent: #b3303c;
+  --accent-strong: #9c2733;
+  --glow: rgba(179, 48, 60, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Albert Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Soft blurred shapes fixed behind the page */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 22% 34% at 30% 62%, var(--glow), transparent 70%),
+    radial-gradient(ellipse 26% 42% at 68% 55%, var(--glow), transparent 70%);
+  filter: blur(40px);
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  padding-top: 96px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 7vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title {
+  margin: 4px 0 28px;
+  color: var(--muted);
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 32px;
+  border-radius: 6px;
+  background: var(--accent-strong);
+  color: #f8f8f8;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: filter 0.2s;
+}
+
+.button:hover {
+  filter: brightness(1.2);
+}
+
+.button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 28px auto 0;
+  padding: 0;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-sun,
+:root[data-theme="light"] .icon-moon {
+  display: none;
+}
+
+:root[data-theme="light"] .icon-sun {
+  display: block;
+}
+
+.divider {
+  height: 1px;
+  margin-top: 48px;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+}
+
+section {
+  padding: 40px 0;
+}
+
+section:first-child {
+  padding-top: 64px;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.fact {
+  margin: 0;
+  color: var(--muted);
+}
+
+.fact strong {
+  color: var(--text);
+}
+
+/* Skill tiers: heading with a short accent underline */
+.tier {
+  margin-top: 20px;
+}
+
+.tier h3::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  margin: 8px 0 10px;
+  background: var(--accent);
+}
+
+.tier p {
+  color: var(--muted);
+}
+
+/* Experience: one block per employer, roles on a timeline */
+.job {
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+}
+
+.job:first-of-type {
+  border-top: 0;
+  padding-top: 8px;
+}
+
+.roles {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.roles > li {
+  position: relative;
+  padding: 0 0 18px 28px;
+}
+
+.roles > li:last-child {
+  padding-bottom: 0;
+}
+
+.roles > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.roles > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 3.5px;
+  top: 21px;
+  bottom: -5px;
+  width: 1px;
+  background: var(--accent-strong);
+}
+
+.dates {
+  margin: 2px 0 8px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.roles > li > p:last-child {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.points {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.9rem;
+}
+
+.points li {
+  margin-bottom: 6px;
+}
+
+.points li::marker {
+  color: var(--accent);
+}
+
+/* Project cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  color: inherit;
+}
+
+.card-name {
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.card:hover .card-name {
+  color: var(--accent);
+}
+
+.card-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.card-lang i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 56px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Sections fade up as they scroll into view (only when script.js is running) */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
